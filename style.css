@@ -1,4 +1,4 @@
-body {
+/*body {
   background: #fff;
   padding: 0px;
   margin: 0px;
@@ -55,4 +55,27 @@ input, button {
   color: #5d8ffc;
   border: 1px solid #5d8ffc;
   cursor: pointer;
+}
+
+button{
+  margin:10px 0;
+  font-size:14px;
+}
+#show div div{
+  display:inline-block;
+  color:#aaa;
+  margin-right:10px;
+}*/
+
+body{
+  line-height:30px;
+}
+button{
+  margin:10px 0;
+  font-size:14px;
+}
+#show div div{
+  display:inline-block;
+  color:#aaa;
+  margin-right:10px;
 }
