@@ -30,3 +30,35 @@
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
 
+[debug] [2018-04-09T13:39:25.456Z] ----------------------------------------------------------------------
+[debug] [2018-04-09T13:39:25.459Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kevin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-04-09T13:39:25.459Z] CLI Version:   3.18.2
+[debug] [2018-04-09T13:39:25.459Z] Platform:      win32
+[debug] [2018-04-09T13:39:25.459Z] Node Version:  v8.11.1
+[debug] [2018-04-09T13:39:25.460Z] Time:          Mon Apr 09 2018 21:39:25 GMT+0800 (台北標準時間)
+[debug] [2018-04-09T13:39:25.460Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-09T13:39:25.470Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-09T13:39:25.470Z] > authorizing via signed-in user
+[debug] [2018-04-09T13:39:25.472Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/software-studio-2018-kevin  
+  
+ Mon Apr 09 2018 21:39:25 GMT+0800 (台北標準時間)
+[debug] [2018-04-09T13:39:26.314Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-09T13:39:26.315Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/software-studio-2018-kevin/tokens  
+  
+ Mon Apr 09 2018 21:39:26 GMT+0800 (台北標準時間)
+[debug] [2018-04-09T13:39:26.984Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-09T13:39:26.985Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/software-studio-2018-kevin  
+  
+ Mon Apr 09 2018 21:39:26 GMT+0800 (台北標準時間)
+[debug] [2018-04-09T13:39:27.902Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Kevin\Midterm_Project\public'...
+[info] 
+[debug] [2018-04-09T13:39:27.905Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/504228802712/clients/_:getWebAppConfig  
+  
+ Mon Apr 09 2018 21:39:27 GMT+0800 (台北標準時間)
+[debug] [2018-04-09T13:39:28.648Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script> 
@@ -42,12 +43,17 @@
               </div>
             
               <div id="user_div" class="loggedin-div">
-                
-                姓名：<input id="name"><br/>
-                聊天內容：<input id="content"><br/>
-                <button id="btn" onclick="send()">送出資料</button>
-                <br/>
-                <div id="show"></div>
+                <div id="im">
+                    <div id="input">
+                      <div>
+                        <span>名字：</span><input id="name"><br/>
+                        <span>內容：</span><input id="content">
+                      </div>
+                      <button id="btn">送出訊息</button>
+                    </div>
+                    <div id="show"></div>
+                  </div>
               </div>
+              
 </body>
 </html>

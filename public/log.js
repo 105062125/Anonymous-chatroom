@@ -37,26 +37,31 @@ $(function(){
     };
     database.push(postData);
     $content.val('');
+
+    
+
   }
   
-  database.once('value', function(snapshot) {
-    $show.html('');
-    for(var i in snapshot.val()){
-       $show.prepend('<div><div>'+snapshot.val()[i].time+'</div>'+snapshot.val()[i].name+' 說：'+snapshot.val()[i].content+'</div>');
-    }
-  });
 
-  database.limitToLast(1).on('value', function(snapshot) {
+  database.limitToLast(20).on('value', function(snapshot) {
     for(var i in snapshot.val()){
-       $show.prepend('<div class="'+snapshot.val()[i].id+'"><div>'+snapshot.val()[i].time+'</div>'+snapshot.val()[i].name+' 說：'+snapshot.val()[i].content+'</div>');
+       $show.append('<div class="'+snapshot.val()[i].id+'"><div class="time">'+snapshot.val()[i].time+'</div><div class="name">'+snapshot.val()[i].name+' 說</div><div class="content">'+snapshot.val()[i].content+'</div>');
     }
-    $show.find('.id'+ms).css({
-      color:'#f00'
+    $show.scrollTop($show[0].scrollHeight);
+    $show.find('.id'+ms+' .name').css({
+      'float':'right',
+      'padding-top':'12px',
+      'color':'#fc0'
     });
-    $show.find('.id'+ms+' div').css({
-      color:'#f00'
+    $show.find('.id'+ms+' .content').css({
+      'float':'right',
+      'margin-right':'10px'
+    });
+    $show.find('.id'+ms+' .time').css({
+      'right':'0',
+      'color':'#777'
     });
   });
-  
+ 
   
 });
