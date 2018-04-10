@@ -44,3 +44,27 @@ function login(){
 function logout(){
   firebase.auth().signOut();
 }
+
+function signup()
+{
+  var userEmail = document.getElementById("account").value;
+  var userPass = document.getElementById("pwd").value;
+  firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+}
+//email verify
+
+function verify()
+{
+  var verifyBtn = document.getElementById("verifyBtn");
+  var user = firebase.auth().currentUser;
+  user.sendEmailVerification().then(function() {
+    console.log("驗證信寄出");
+  }, function(error) {
+   	console.error("驗證信錯誤");
+  });
+}
