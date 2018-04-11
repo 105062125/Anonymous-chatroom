@@ -81,7 +81,7 @@ function initApp() {
                 //window.alert("Error : " + errorMessage);
                 create_alert('error','密碼長度至少六位英數字');
             } else {
-                create_alert('error','信箱已被註冊');
+                create_alert('error','信箱已被註冊或未輸入正確格式');
              }
              console.log(error);
              });

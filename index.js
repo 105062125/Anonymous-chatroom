@@ -8,22 +8,27 @@ firebase.auth().onAuthStateChanged(function(user) {
     var user = firebase.auth().currentUser;
 
     if(user != null){
-
+      var name, email, photoUrl, uid, emailVerified;
       var email_id = user.email;
-      document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+      name = user.displayName;
+      email = user.email;
+      photoUrl = user.photoURL;
+      emailVerified = user.emailVerified;
+      document.getElementById("user_para").innerHTML = "Welcome User : " + name;
 
     }
+    
 
   } else {
     // No user is signed in.
-
+    document.getElementById("user_para").innerHTML = "Please log in";
     document.getElementById("user_div").style.display = "none";
     document.getElementById("login_div").style.display = "block";
 
   }
 });
 
-function login(){
+/*function login(){
 
   var userEmail = document.getElementById("email_field").value;
   var userPass = document.getElementById("password_field").value;
@@ -39,7 +44,7 @@ function login(){
 
   });
 
-}
+}*/
 
 function logout(){
   firebase.auth().signOut();
@@ -66,5 +71,20 @@ function verify()
     console.log("驗證信寄出");
   }, function(error) {
    	console.error("驗證信錯誤");
+  });
+}
+
+//更改帳號名字
+
+function changename(){
+  var user = firebase.auth().currentUser;
+  var change = document.getElementById("changename").value;
+  user.updateProfile({
+    displayName: change,
+  }).then(function() {
+     window.alert("success");
+     document.getElementById("user_para").innerHTML = "Welcome User : " + user.displayName;
+  }).catch(function(error) {
+      window.alert("wrong");
   });
 }

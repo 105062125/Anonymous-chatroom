@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Midterm Project</title>
+    <title>WeTalk</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
@@ -36,28 +36,24 @@
 
 <body>
   <div class="container">
+            <div id="user_para" ></div>
             <div id="login_div" class="main-div">
                 <h3>聊天室登入</h3>
-                <input type="email" placeholder="Email..." id="email_field" />
-                <input type="password" placeholder="Password..." id="password_field" />
 
                 <button onclick="location.href='signin.html';">Sign In</button>
-                <button onclick="login()">Login to Account</button>
-                <h2>註冊</h2>
-                  <lable for="account"></lable>
-                  <input id="account" type="text">
-                  <lable for="pwd"></lable>
-                  <input id="pwd" type="password">
-                  <button onclick="signup()">Signup</button>
+                
               </div>
               <h2>電子郵件驗證</h2>
                 <button onclick="verify()">Verify</button>
-                <button onclick="logout()">Logout</button>
+                
               <div id="user_div" class="loggedin-div">
+                  <button onclick="logout()">Logout</button>
+                  <span>姓名登入：</span><input id="changename" placeholder="name..."><br/>
+                  <button id="changenamebtn" onclick="changename()" >修改</button>
+
                 <div id="im">
                     <div id="input">
                       <div>
-                        <span>名字：</span><input id="name" placeholder="name..."><br/>
                         <span>內容：</span><input id="content" placeholder="content...">
                       </div>
                       <button id="btn">送出訊息</button>

@@ -15,29 +15,35 @@ $(function(){
   });
   
   function write(){
-    var date = new Date();
-    var h = date.getHours();
-    var m = date.getMinutes();
-    var s = date.getSeconds();
-    if(h<10){
-      h = '0'+h;
+    var user = firebase.auth().currentUser;
+    if(user.displayName == null){
+      window.alert("請先輸入名字")
     }
-    if(m<10){
-      m = '0' + m;
+    else{
+      var date = new Date();
+      var h = date.getHours();
+      var m = date.getMinutes();
+      var s = date.getSeconds();
+      if(h<10){
+        h = '0'+h;
+      }
+      if(m<10){
+        m = '0' + m;
+      }
+      if(s<10){
+        s = '0' + s;
+      }
+      var now = h+':'+m+':'+s;
+      var postData = {
+        name:user.displayName,
+        content:$('#content').val(),
+        time:now,
+        id:'id'+ms
+      };
+      database.push(postData);
+      $content.val('');
     }
-    if(s<10){
-      s = '0' + s;
-    }
-    var now = h+':'+m+':'+s;
-    var postData = {
-      name:$('#name').val(),
-      content:$('#content').val(),
-      time:now,
-      id:'id'+ms
-    };
-    database.push(postData);
-    $content.val('');
-
+    
     
 
   }
