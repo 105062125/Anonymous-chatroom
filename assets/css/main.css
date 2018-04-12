@@ -3795,7 +3795,10 @@
 
 		@media screen and (max-width: 1280px) {
 
- 
+			#banner video {
+				display: none;
+			}
+
 		}
 
 		@media screen and (max-width: 736px) {
