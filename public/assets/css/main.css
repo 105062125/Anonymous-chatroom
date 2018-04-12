@@ -3836,7 +3836,7 @@
 		@media screen and (max-width: 480px) {
 			#banner {
 				min-height: 0;
-				height: auto !important;
+				height: 150%;
 				margin: 0px;
 				
 			}
