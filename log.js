@@ -17,7 +17,7 @@ $(function(){
   function write(){
     var user = firebase.auth().currentUser;
     if(user.displayName == null){
-      window.alert("請先輸入名字")
+      window.alert("請去setting設定名字")
     }
     else{
       var date = new Date();

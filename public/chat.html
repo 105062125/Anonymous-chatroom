@@ -62,19 +62,16 @@
             <li class="nav-item">
               <a class="nav-link" href="#">About Me&nbsp;&nbsp;</a>
             </li>
-            <li class="nav-item">
-                    <a class="nav-link" href="#">Setting&nbsp;&nbsp;</a>
-            </li>
-            
             <!-- .dropdown Navbar選項使用下拉式選單 -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">作品集</a>
-              <!-- .dropdown-menu 下拉選單內容 -->
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">網頁設計</a>
-                <a class="dropdown-item" href="#">平面設計</a>
-              </div>
-            </li>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Setting</a>
+                <!-- .dropdown-menu 下拉選單內容 -->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" ><input id="changename" placeholder="name..."><br/></a>
+                  <a class="dropdown-item" ><button id="changenamebtn" onclick="changename()" >修改</button></a>
+                </div>
+              </li>
+            
             <li class="nav-item">
                     <a class="nav-link"><div id="user_para">&nbsp;&nbsp;</div></a>
             </li>
@@ -86,9 +83,7 @@
         </div>
         
       </nav>
-                
-              
-
+  
                 <div id="im">
                     <div id="input">
                       <div>

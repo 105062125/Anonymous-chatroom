@@ -75,7 +75,7 @@ function changename(){
   var user = firebase.auth().currentUser;
   var change = document.getElementById("changename").value;
   user.updateProfile({
-    displayName: change,
+    displayName:change,
   }).then(function() {
      window.alert("success");
      document.getElementById("user_para").innerHTML = "Welcome User : " + user.displayName;
