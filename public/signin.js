@@ -17,7 +17,7 @@ function initApp() {
         var password = txtPassword.value;
 
          firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
-            window.location.replace('index.html');
+            window.location.replace('chat.html');
         }).catch(function (error) {
             // Handle Errors here.
         var errorCode = error.code;
@@ -42,7 +42,7 @@ function initApp() {
         firebase.auth().signInWithPopup(provider).then(function (result) {
             var token = result.credential.accessToken;
             var user = result.user;
-            window.location.replace('index.html');
+            window.location.replace('chat.html');
         }).catch(function (error) {
             console.log('error: ' + error.message);
         });
@@ -100,7 +100,7 @@ function initApp() {
           var token = result.credential.accessToken;
           // 使用者資料
           var FBUser = result.user;
-          window.location.replace('index.html');
+          window.location.replace('chat.html');
           console.log(FBUser);
         }).catch(function(error) {
           //處理 帳號已經存在於其他登入方式時
@@ -153,7 +153,7 @@ function initApp() {
         }
         
         function goToApp(){
-            window.location.replace('index.html');
+            window.location.replace('chat.html');
         }
 
         

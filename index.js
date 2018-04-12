@@ -2,9 +2,6 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
 
-    document.getElementById("user_div").style.display = "block";
-    document.getElementById("login_div").style.display = "none";
-
     var user = firebase.auth().currentUser;
 
     if(user != null){
@@ -14,16 +11,13 @@ firebase.auth().onAuthStateChanged(function(user) {
       email = user.email;
       photoUrl = user.photoURL;
       emailVerified = user.emailVerified;
-      document.getElementById("user_para").innerHTML = "Welcome User : " + name;
+      document.getElementById("user_para").innerHTML = "Welcome User  :      " + name;
 
     }
     
 
   } else {
     // No user is signed in.
-    document.getElementById("user_para").innerHTML = "Please log in";
-    document.getElementById("user_div").style.display = "none";
-    document.getElementById("login_div").style.display = "block";
 
   }
 });
@@ -48,9 +42,10 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 function logout(){
   firebase.auth().signOut();
+  window.location.replace('index.html');
 }
 
-function signup()
+/*function signup()
 {
   var userEmail = document.getElementById("account").value;
   var userPass = document.getElementById("pwd").value;
@@ -60,7 +55,7 @@ function signup()
     var errorMessage = error.message;
     // ...
   });
-}
+}*/
 //email verify
 
 function verify()

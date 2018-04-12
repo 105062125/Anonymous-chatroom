@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>WeTalk</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
@@ -35,33 +37,50 @@
 </head>
 
 <body>
-  <div class="container">
-            <div id="user_para" ></div>
-            <div id="login_div" class="main-div">
-                <h3>聊天室登入</h3>
+  
+		<!-- Header -->
+    <header id="header" class="alt">
+				<div class="logo"><img src="images/w.svg" width="30" height="30" class="d-inline-block align-top" alt=""><a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WeTalk</a></div>
+				<a href="#menu" class="toggle"><span>Menu</span></a>
+			</header>
 
-                <button onclick="location.href='signin.html';">Sign In</button>
-                
-              </div>
-              <h2>電子郵件驗證</h2>
-                <button onclick="verify()">Verify</button>
-                
-              <div id="user_div" class="loggedin-div">
-                  <button onclick="logout()">Logout</button>
-                  <span>姓名登入：</span><input id="changename" placeholder="name..."><br/>
-                  <button id="changenamebtn" onclick="changename()" >修改</button>
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">About Me</a></li>
+          <li><a href="elements.html">About this website</a></li>
+          <li><a href="https://www.facebook.com/chen.kevin.3785">My Facebook</a></li>
+				</ul>
+			</nav>
 
-                <div id="im">
-                    <div id="input">
-                      <div>
-                        <span>內容：</span><input id="content" placeholder="content...">
-                      </div>
-                      <button id="btn">送出訊息</button>
-                    </div>
-                    <div id="show"></div>
-                  </div>
-              </div>
-  </div>
-  <script src="js/bootstrap.min.js"></script>
+		<!-- Banner -->
+		<!--
+			To use a video as your background, set data-video to the name of your video without
+			its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+			formats to work correctly.
+		-->
+			<section id="banner" data-video="images/banner">
+				<div class="inner">
+            <img src="images/w.svg" width="50" height="50" class="d-inline-block align-top" alt="">
+            <h2></h2>
+					<h1>WE TALK</h1>
+					<p>Welcome to my chatroom<br />
+					Belongs to<a href="https://www.facebook.com/chen.kevin.3785">&nbsp;Kevin</a> and create by <a href="https://www.facebook.com/chen.kevin.3785">&nbsp;My self</a>.</p>
+					<a href="signin.html" class="button special scrolly">Sign In</a>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

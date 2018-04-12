@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WeTalk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+    
+    <script>
+    // Initialize Firebase 
+    var config = {
+        apiKey: "AIzaSyB5ffoGcLYYmvX6S15JW8A7tWKVZjpCa-k",
+        authDomain: "software-studio-2018-kevin.firebaseapp.com",
+        databaseURL: "https://software-studio-2018-kevin.firebaseio.com",
+        projectId: "software-studio-2018-kevin",
+        storageBucket: "software-studio-2018-kevin.appspot.com",
+        messagingSenderId: "504228802712"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+    <script src="log.js"></script>
+
+
+</head>
+<body>
+          <div id="user_div" class="loggedin-div">
+              <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
+  <!-- navbar-dark 文字顏色 .bg-dark 背景顏色 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   
+        <!-- .navbar-brand 左上LOGO位置 -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/w.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          <span class="h3 mx-1">WeTalk</span>
+        </a>
+        <!-- .navbar-toggler 漢堡式選單按鈕 -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- .navbar-toggler-icon 漢堡式選單Icon -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+        <!-- 選單項目&漢堡式折疊選單 -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <!-- active表示當前頁面 -->
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home&nbsp;&nbsp;<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Me&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#">Setting&nbsp;&nbsp;</a>
+            </li>
+            
+            <!-- .dropdown Navbar選項使用下拉式選單 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">作品集</a>
+              <!-- .dropdown-menu 下拉選單內容 -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">網頁設計</a>
+                <a class="dropdown-item" href="#">平面設計</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link"><div id="user_para">&nbsp;&nbsp;</div></a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="logout()" >LogOut&nbsp;&nbsp;</a>
+            </li>
+          </ul>
+         
+        </div>
+        
+      </nav>
+                
+              
+
+                <div id="im">
+                    <div id="input">
+                      <div>
+                        <span>內容：</span><input id="content" placeholder="content...">
+                      </div>
+                      <button id="btn">送出訊息</button>
+                    </div>
+                    <div id="show"></div>
+                </div>
+        </div>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
