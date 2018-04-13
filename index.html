@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico">
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
@@ -46,7 +47,31 @@
 </head>
 
 <body>
-  
+    
+      
+      <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">About Me</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Hi I'm Kevin Chen<br>
+              WeTalk的設計者<br>
+              歡迎使用WeTalk<br>
+              這是會員制匿名線上聊天軟體<br>
+              Have Fun ! 
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
 		<!-- Header -->
     <header id="header" class="alt">
 				<div class="logo"><img src="images/w.svg" width="30" height="30" class="d-inline-block align-top" alt=""><a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WeTalk</a></div>
@@ -55,12 +80,12 @@
 
 		<!-- Nav -->
 			<nav id="menu">
+                
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">About Me</a></li>
-          <li><a href="elements.html">About this website</a></li>
-          <li><a href="https://www.facebook.com/chen.kevin.3785">My Facebook</a></li>
-				</ul>
+                    <li><a href="#">About this website</a></li>
+                    <li><a href="https://www.facebook.com/chen.kevin.3785">Designer's Facebook</a></li>
+                </ul>
 			</nav>
 
 		<!-- Banner -->
@@ -75,7 +100,7 @@
             <h2></h2>
 					<h1>WE TALK</h1>
 					<p>Welcome to my chatroom<br />
-            Copyright © 2018<a href="https://www.facebook.com/chen.kevin.3785">&nbsp;&nbsp;&nbsp;Kevin&nbsp;&nbsp;</a> All rights reserved.</p>
+            Copyright © 2018<a href="#" data-toggle="modal" data-target="#exampleModalCenter">&nbsp;&nbsp;&nbsp;Kevin&nbsp;&nbsp;</a> All rights reserved.</p>
 					<a href="signin.html" class="button special scrolly">Sign In</a>
 				</div>
 			</section>
