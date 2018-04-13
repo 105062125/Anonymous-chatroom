@@ -48,8 +48,16 @@ $(function(){
 
   }
   
+  database.once('value', function(snapshot) {
+    $show.html('');
+    for(var i in snapshot.val()){
+       $show.append('<div><div class="time">'+snapshot.val()[i].time+'</div><div class="name">'+snapshot.val()[i].name+' 說</div><div class="content">'+snapshot.val()[i].content+'</div>');
+    }
+    $show.scrollTop($show[0].scrollHeight);
+  });
 
-  database.limitToLast(20).on('value', function(snapshot) {
+  
+  database.limitToLast(1).on('value', function(snapshot) {
     for(var i in snapshot.val()){
        $show.append('<div class="'+snapshot.val()[i].id+'"><div class="time">'+snapshot.val()[i].time+'</div><div class="name">'+snapshot.val()[i].name+' 說</div><div class="content">'+snapshot.val()[i].content+'</div>');
     }
