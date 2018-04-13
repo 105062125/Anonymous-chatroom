@@ -44,14 +44,14 @@ body,html{
 }
 
 #input input{
-  width:75%;
+  width:65%;
   border:none;
   padding:5px;
 }
 
 #input span{
-  width:18%;
-  min-width:50px;
+  width:30%;
+  min-width:55px;
   color: rgb(202, 199, 199);
 }
 

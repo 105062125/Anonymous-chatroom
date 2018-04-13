@@ -1,64 +1,41 @@
-[debug] [2018-04-07T10:11:51.259Z] ----------------------------------------------------------------------
-[debug] [2018-04-07T10:11:51.262Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kevin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-04-07T10:11:51.263Z] CLI Version:   3.18.2
-[debug] [2018-04-07T10:11:51.263Z] Platform:      win32
-[debug] [2018-04-07T10:11:51.263Z] Node Version:  v8.11.1
-[debug] [2018-04-07T10:11:51.264Z] Time:          Sat Apr 07 2018 18:11:51 GMT+0800 (台北標準時間)
-[debug] [2018-04-07T10:11:51.264Z] ----------------------------------------------------------------------
+[debug] [2018-04-13T13:50:00.155Z] ----------------------------------------------------------------------
+[debug] [2018-04-13T13:50:00.159Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kevin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-04-13T13:50:00.159Z] CLI Version:   3.18.2
+[debug] [2018-04-13T13:50:00.159Z] Platform:      win32
+[debug] [2018-04-13T13:50:00.159Z] Node Version:  v8.11.1
+[debug] [2018-04-13T13:50:00.160Z] Time:          Fri Apr 13 2018 21:50:00 GMT+0800 (台北標準時間)
+[debug] [2018-04-13T13:50:00.160Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-04-07T10:11:51.276Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-07T10:11:51.276Z] > authorizing via signed-in user
-[debug] [2018-04-07T10:11:51.278Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/software-studio-2018-kevin  
+[debug] [2018-04-13T13:50:00.170Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-13T13:50:00.171Z] > authorizing via signed-in user
+[debug] [2018-04-13T13:50:00.173Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-13T13:50:00.173Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/kYSs5p7oFUIslFmdy2eM5n4lz2l-45Ea-qjdBDLBN8o',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Apr 13 2018 21:50:00 GMT+0800 (台北標準時間)
+[debug] [2018-04-13T13:50:00.496Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-13T13:50:00.530Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/software-studio-2018-kevin  
   
- Sat Apr 07 2018 18:11:51 GMT+0800 (台北標準時間)
-[debug] [2018-04-07T10:11:52.168Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-07T10:11:52.168Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/software-studio-2018-kevin/tokens  
+ Fri Apr 13 2018 21:50:00 GMT+0800 (台北標準時間)
+[debug] [2018-04-13T13:50:01.927Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-13T13:50:01.928Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/software-studio-2018-kevin/tokens  
   
- Sat Apr 07 2018 18:11:52 GMT+0800 (台北標準時間)
-[debug] [2018-04-07T10:11:52.908Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-07T10:11:52.909Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/software-studio-2018-kevin  
+ Fri Apr 13 2018 21:50:01 GMT+0800 (台北標準時間)
+[debug] [2018-04-13T13:50:03.824Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-13T13:50:03.825Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/software-studio-2018-kevin  
   
- Sat Apr 07 2018 18:11:52 GMT+0800 (台北標準時間)
-[debug] [2018-04-07T10:11:53.874Z] <<< HTTP RESPONSE 200
+ Fri Apr 13 2018 21:50:03 GMT+0800 (台北標準時間)
+[debug] [2018-04-13T13:50:05.176Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\Users\Kevin\Midterm_Project'...
 [info] 
-[debug] [2018-04-07T10:11:53.877Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/504228802712/clients/_:getWebAppConfig  
+[debug] [2018-04-13T13:50:05.179Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/504228802712/clients/_:getWebAppConfig  
   
- Sat Apr 07 2018 18:11:53 GMT+0800 (台北標準時間)
-[debug] [2018-04-07T10:11:54.556Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
-[debug] [2018-04-09T13:39:25.456Z] ----------------------------------------------------------------------
-[debug] [2018-04-09T13:39:25.459Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kevin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-04-09T13:39:25.459Z] CLI Version:   3.18.2
-[debug] [2018-04-09T13:39:25.459Z] Platform:      win32
-[debug] [2018-04-09T13:39:25.459Z] Node Version:  v8.11.1
-[debug] [2018-04-09T13:39:25.460Z] Time:          Mon Apr 09 2018 21:39:25 GMT+0800 (台北標準時間)
-[debug] [2018-04-09T13:39:25.460Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-04-09T13:39:25.470Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-04-09T13:39:25.470Z] > authorizing via signed-in user
-[debug] [2018-04-09T13:39:25.472Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/software-studio-2018-kevin  
-  
- Mon Apr 09 2018 21:39:25 GMT+0800 (台北標準時間)
-[debug] [2018-04-09T13:39:26.314Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-09T13:39:26.315Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/software-studio-2018-kevin/tokens  
-  
- Mon Apr 09 2018 21:39:26 GMT+0800 (台北標準時間)
-[debug] [2018-04-09T13:39:26.984Z] <<< HTTP RESPONSE 200
-[debug] [2018-04-09T13:39:26.985Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/software-studio-2018-kevin  
-  
- Mon Apr 09 2018 21:39:26 GMT+0800 (台北標準時間)
-[debug] [2018-04-09T13:39:27.902Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from 'C:\Users\Kevin\Midterm_Project\public'...
-[info] 
-[debug] [2018-04-09T13:39:27.905Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/504228802712/clients/_:getWebAppConfig  
-  
- Mon Apr 09 2018 21:39:27 GMT+0800 (台北標準時間)
-[debug] [2018-04-09T13:39:28.648Z] <<< HTTP RESPONSE 200
+ Fri Apr 13 2018 21:50:05 GMT+0800 (台北標準時間)
+[debug] [2018-04-13T13:50:07.047Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
 
