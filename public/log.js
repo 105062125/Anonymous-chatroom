@@ -1,3 +1,11 @@
+var roomnum = Math.ceil(Math.random()*5);
+let chooseroom = [];
+chooseroom[1] = [0,'/ID1/'] ;
+chooseroom[2] = [0,'/ID2/'] ;
+chooseroom[3] = [0,'/ID3/'] ;
+chooseroom[4] = [0,'/ID4/'] ;
+chooseroom[5] = [0,'/ID5/'] ;
+
 
 $(function(){
   var $name = $('#name'),
@@ -6,7 +14,7 @@ $(function(){
       $show = $('#show'),
       ms = new Date().getTime();
   var database = firebase.database().ref();
-  
+  document.getElementById("user_para2").innerHTML = " [ "+" Room  " + roomnum + " ] ";
   $btn.on('click',write);
   $content.on('keydown', function(e){
     if(e.keyCode == 13){
@@ -40,7 +48,7 @@ $(function(){
         time:now,
         id:'id'+ms
       };
-      database.push(postData);
+      firebase.database().ref(chooseroom[roomnum][1]).push(postData);
       $content.val('');
     }
     
@@ -48,7 +56,7 @@ $(function(){
 
   }
   
-  database.once('value', function(snapshot) {
+  firebase.database().ref(chooseroom[roomnum][1]).once('value', function(snapshot) {
     $show.html('');
     for(var i in snapshot.val()){
        $show.append('<div><div class="time">'+snapshot.val()[i].time+'</div><div class="name">'+snapshot.val()[i].name+' 說</div><div class="content">'+snapshot.val()[i].content+'</div>');
@@ -57,7 +65,7 @@ $(function(){
   });
 
   
-  database.limitToLast(1).on('value', function(snapshot) {
+  firebase.database().ref(chooseroom[roomnum][1]).limitToLast(1).on('value', function(snapshot) {
     for(var i in snapshot.val()){
        $show.append('<div class="'+snapshot.val()[i].id+'"><div class="time">'+snapshot.val()[i].time+'</div><div class="name">'+snapshot.val()[i].name+' 說</div><div class="content">'+snapshot.val()[i].content+'</div>');
     }
