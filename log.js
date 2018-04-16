@@ -10,7 +10,6 @@ firebase.database().ref(chooseroom[roomnum][2]).once('value', function(data) {
   test1.update({
   "visit": add+1
   });
-  
 });
 
 function logout(){
