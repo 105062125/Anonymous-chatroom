@@ -40,11 +40,6 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 }*/
 
-function logout(){
-  firebase.auth().signOut();
-  window.location.replace('index.html');
-}
-
 /*function signup()
 {
   var userEmail = document.getElementById("account").value;

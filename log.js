@@ -1,10 +1,27 @@
-var roomnum = Math.ceil(Math.random()*5);
+var roomnum = Math.ceil(Math.random()*3);
 let chooseroom = [];
-chooseroom[1] = [0,'/ID1/'] ;
-chooseroom[2] = [0,'/ID2/'] ;
-chooseroom[3] = [0,'/ID3/'] ;
-chooseroom[4] = [0,'/ID4/'] ;
-chooseroom[5] = [0,'/ID5/'] ;
+chooseroom[1] = ['/ID1/','/ID1/content/','/ID1/visit'] ;
+chooseroom[2] = ['/ID2/','/ID2/content/','/ID2/visit'] ;
+chooseroom[3] = ['/ID3/','/ID3/content/','/ID3/visit'] ;
+var add;
+firebase.database().ref(chooseroom[roomnum][2]).once('value', function(data) {
+  add = data.val();
+  var test1 = firebase.database().ref(chooseroom[roomnum][0]);
+  test1.update({
+  "visit": add+1
+  });
+  
+});
+
+function logout(){
+  firebase.auth().signOut();
+  window.location.replace('index.html');
+}
+
+function changeroom(){
+  window.location.replace('chat.html');
+  //window.alert("success");
+}
 
 
 $(function(){
