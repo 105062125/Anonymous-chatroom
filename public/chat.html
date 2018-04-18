@@ -74,16 +74,21 @@
               <a class="nav-link" href="https://www.facebook.com/chen.kevin.3785">About Me&nbsp;&nbsp;</a>
             </li>
             <!-- .dropdown Navbar選項使用下拉式選單 -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Setting</a>
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Setting</a>
                 <!-- .dropdown-menu 下拉選單內容 -->
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" ><input id="changename" placeholder="name..."><br/></a>
+                  <a class="dropdown-item " ><input id="changename" placeholder="name..."><br/></a>
                   <a class="dropdown-item" ><button id="changenamebtn" onclick="changename()" >修改暱稱</button></a>
-                  <a class="dropdown-item" ><button id="changeroombtn" onclick="changeroom()" >隨機配對房間</button></a>
+                  <a class="dropdown-item " ><input id="changeroom" placeholder="room number..." onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"><br/></a>
+                  <a class="dropdown-item" ><button id="changeroombtn" onclick="changeroom()" >切換房間</button></a>
+                  <a class="dropdown-item " ><input id="createroom" placeholder="設定密語(任何字符)..."><br/></a>
+                  <a class="dropdown-item" ><button id="createroombtn" onclick="createroom()" >建立密語房間</button></a>
+                  <a class="dropdown-item " ><input id="intocreateroom" placeholder="輸入房間密語..."><br/></a>
+                  <a class="dropdown-item" ><button id="intocreateroombtn" onclick="intocreateroom()" >進入密語房間</button></a>
                 </div>
               </li>
-            
+              
             <li class="nav-item">
                     <a class="nav-link"><div id="user_para">&nbsp;&nbsp;</div></a>
             </li>
@@ -112,7 +117,7 @@
 
 
 
-
+        
         <script src="avoid.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
