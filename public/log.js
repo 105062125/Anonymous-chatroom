@@ -20,14 +20,18 @@ function logout(){
   window.location.replace('index.html');
 }
 
+
+
 function intocreateroom(){
   check = document.getElementById("intocreateroom").value;
   if(check == roomnum)
   {
     window.alert("你已經在此房間");
+    document.getElementById("intocreateroom").value = '';
   }
   else
-  {
+  { 
+    window.alert("已進入房間(若不存在房間則直接建立)")
     roomnum = document.getElementById("intocreateroom").value;
     refdestination = roomnum + '/' + 'content/';
     var $name = $('#name'),
@@ -73,9 +77,9 @@ function createroom(){
   refdestination = roomnum + '/' + 'content/';
   firebase.database().ref(roomnum).set({
     content : 0,
-    visit : 0
+    visit : 1
   });
-  window.alert("已進入密語房間")
+  window.alert("已建立密語房間 歡迎")
   //創完了
   //進入房間
   document.getElementById("createroom").value = '';
@@ -149,6 +153,7 @@ firebase.database().ref(refdestination).once('value', function(snapshot) {
   }
   $show.scrollTop($show[0].scrollHeight);
 });
+document.getElementById("changeroom").value = '';
 firebase.database().ref(refdestination).limitToLast(1).on('value', function(snapshot) {
   for(var i in snapshot.val()){
      $show.append('<div class="'+snapshot.val()[i].id+'"><div class="time">'+snapshot.val()[i].time+'</div><div class="name">'+snapshot.val()[i].name+' 說</div><div class="content">'+snapshot.val()[i].content+'</div>');
