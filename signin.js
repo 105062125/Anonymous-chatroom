@@ -7,7 +7,7 @@ function initApp() {
     var btnFacebook = document.getElementById('facebook');
     var btnSignUp = document.getElementById('signup');
     var btnchangePassword = document.getElementById('changepassword');
-
+    
     btnLogin.addEventListener('click', function () {
         /// TODO 2: Add email login button event
         ///         1. Get user input email and password to login
