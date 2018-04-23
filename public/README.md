@@ -84,8 +84,13 @@
     (6) Welcome user (可以知道目前的使用者)<br>
     (7) LogOut 登出<br>
     
-
+Template(皆是參考並使用外觀)
 ----------------------------------------
+https://templated.co/transitive 首頁<br>
+https://colorlib.com/wp/html5-and-css3-login-forms/ 登入介面<br>
+https://tutorials.webduino.io/zh-tw/docs/socket/useful/im-1.html 聊天室介面<br>
+
+上述template皆是參考，都已經過修改套用。
 
 
 
@@ -102,4 +107,6 @@
     這樣做是為了確保使用者與網站、或兩個系統之間傳輸的任何資料保持無法被讀取的狀態。此技術可使用加密演算法以混淆輸送中的資料，防止駭客在資料透過連線發送時讀取資料。此資訊可能是任何敏感或個人資訊，包括信用卡號與其他財務資訊、姓名與地址。<br>
     HTTPS (Hyper Text Transfer Protocol Secure，超級文字傳輸協議安全) 會在網站受到 SSL 憑證保護時在網址中出現。該憑證的詳細資料包括發行機構與網站擁有人的企業名稱，可以透過按一下瀏覽器列上的鎖定標記進行檢視。
  
-3.  所以當網頁是以https開頭，代表這個網站的安全性是足夠的
+3. 鎖住右鍵和f12(但還是可以用滑鼠點開開發者工具)
+
+4.  所以當網頁是以https開頭，代表這個網站的安全性是足夠的
