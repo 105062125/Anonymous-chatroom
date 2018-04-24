@@ -62,3 +62,44 @@
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
 
+[debug] [2018-04-23T10:33:36.116Z] ----------------------------------------------------------------------
+[debug] [2018-04-23T10:33:36.120Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kevin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-04-23T10:33:36.120Z] CLI Version:   3.18.2
+[debug] [2018-04-23T10:33:36.121Z] Platform:      win32
+[debug] [2018-04-23T10:33:36.121Z] Node Version:  v8.11.1
+[debug] [2018-04-23T10:33:36.122Z] Time:          Mon Apr 23 2018 18:33:36 GMT+0800 (台北標準時間)
+[debug] [2018-04-23T10:33:36.123Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-23T10:33:36.176Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-23T10:33:36.176Z] > authorizing via signed-in user
+[debug] [2018-04-23T10:33:36.179Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-23T10:33:36.179Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/kYSs5p7oFUIslFmdy2eM5n4lz2l-45Ea-qjdBDLBN8o',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Apr 23 2018 18:33:36 GMT+0800 (台北標準時間)
+[debug] [2018-04-23T10:33:36.299Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-23T10:33:36.328Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/software-studio-2018-kevin  
+  
+ Mon Apr 23 2018 18:33:36 GMT+0800 (台北標準時間)
+[debug] [2018-04-23T10:33:37.136Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-23T10:33:37.137Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/software-studio-2018-kevin/tokens  
+  
+ Mon Apr 23 2018 18:33:37 GMT+0800 (台北標準時間)
+[debug] [2018-04-23T10:33:37.852Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-23T10:33:37.852Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/software-studio-2018-kevin  
+  
+ Mon Apr 23 2018 18:33:37 GMT+0800 (台北標準時間)
+[debug] [2018-04-23T10:33:38.770Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Kevin\Midterm_Project'...
+[info] 
+[debug] [2018-04-23T10:33:38.787Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/504228802712/clients/_:getWebAppConfig  
+  
+ Mon Apr 23 2018 18:33:38 GMT+0800 (台北標準時間)
+[debug] [2018-04-23T10:33:39.374Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+

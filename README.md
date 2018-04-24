@@ -12,8 +12,11 @@
     1. 可以自己切換公眾房間
     2. 可以自己創立密語房間(透過密碼才能進入)
     3. setting account(修改暱稱)
-    4. 修改密碼
+    4. 忘記密碼(寄信讓使用者重新辦)
     5. 建立帳號
+    6. 第三方登入
+    7. google 通知
+    8. css animation
 
 
 ## Basic Components
@@ -91,6 +94,15 @@ https://colorlib.com/wp/html5-and-css3-login-forms/ 登入介面<br>
 https://tutorials.webduino.io/zh-tw/docs/socket/useful/im-1.html 聊天室介面<br>
 
 上述template皆是參考，都已經過修改套用。
+
+使用到的API
+-----------------------
+基本跟Firebase有關的API都有使用到<br>
+另外還有Google & Facebook & "OneSignal"<br>
+
+這邊特別說明一下 "OneSignal" 是為了實現google通知而使用的<br>
+
+
 
 
 

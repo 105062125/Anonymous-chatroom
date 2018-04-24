@@ -221,6 +221,7 @@ $(function(){
       }
       var now = h+':'+m+':'+s;
       var postData = {
+    
         name:user.displayName,
         content:$('#content').val(),
         time:now,
