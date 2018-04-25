@@ -91,7 +91,6 @@ Template(皆是參考並使用外觀)
 ----------------------------------------
 https://templated.co/transitive 首頁<br>
 https://colorlib.com/wp/html5-and-css3-login-forms/ 登入介面<br>
-https://tutorials.webduino.io/zh-tw/docs/socket/useful/im-1.html 聊天室介面<br>
 
 上述template皆是參考，都已經過修改套用。
 
